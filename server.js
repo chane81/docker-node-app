@@ -32,13 +32,13 @@ app.post('/api/value', (req, res, next) => {
 })
 
 // TABLE CREATE
-db.pool.query(`CREATE TABLE lists
-  id INTEGER AUTO_INCREMENT,
-  value TEXT,
-  PRIMARY KEY (id)
-`, (err, results, fields) => {
-    console.log('results', results);
-})
+// db.pool.query(`CREATE TABLE lists
+//   id INTEGER AUTO_INCREMENT,
+//   value TEXT,
+//   PRIMARY KEY (id)
+// `, (err, results, fields) => {
+//     console.log('results', results);
+// })
 
 app.listen(5000, () => {
   console.log('node server started! port 5000');
